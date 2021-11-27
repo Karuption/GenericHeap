@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeapTests", "HeapTests\HeapTests.csproj", "{80A92214-78C9-46C8-BD0E-35D626ACA485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericHeap", "GenericHeap\GenericHeap.csproj", "{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80A92214-78C9-46C8-BD0E-35D626ACA485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A92214-78C9-46C8-BD0E-35D626ACA485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A92214-78C9-46C8-BD0E-35D626ACA485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A92214-78C9-46C8-BD0E-35D626ACA485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9393A192-8981-4DA9-BF7A-867B15D4962B}
+	EndGlobalSection
+EndGlobal
