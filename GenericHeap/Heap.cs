@@ -55,21 +55,15 @@ public class Heap<T> where T : System.IComparable<T>, new() {
         var currentNode = index;
         bool needsCorrection = true;
         
-        while (needsCorrection) { 
-            if (leftChildGreater(currentNode) || rightChildGreater(currentNode)) {
-                if (rightSiblingGreater(currentNode)) {
-                    swap(currentNode, getRight(currentNode));
-                    currentNode = getRight(currentNode);
-                } else {
-                    swap(currentNode, getLeft(currentNode));
-                    currentNode = getLeft(currentNode);
-                }
+        while (leftChildGreater(currentNode) || rightChildGreater(currentNode)) {
+            if (rightSiblingGreater(currentNode)) {
+                swap(currentNode, getRight(currentNode));
+                currentNode = getRight(currentNode);
+            } else {
+                swap(currentNode, getLeft(currentNode));
+                currentNode = getLeft(currentNode);
             }
-            else {
-                needsCorrection = false;
-            }
-        } 
-        
+        }        
     }
     public T Replace(T value) {
         var extract = heapArray[0];
