@@ -5,7 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeapTests", "HeapTests\HeapTests.csproj", "{80A92214-78C9-46C8-BD0E-35D626ACA485}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericHeap", "GenericHeap\GenericHeap.csproj", "{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericHeap", "GenericHeap\GenericHeap.csproj", "{7E55794B-DD2B-4953-8A36-DAC2F532DAE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFF9E3D8-402F-46A5-B519-6147DF4D7170}"
+	ProjectSection(SolutionItems) = preProject
+		README.MD = README.MD
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

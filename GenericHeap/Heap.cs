@@ -1,4 +1,14 @@
 ﻿namespace GenericHeap;
+
+//To Implement
+//Creation
+//heapify: create a heap out of given array of elements
+//merge(union): joining two heaps to form a valid new heap containing all the elements of both, preserving the original heaps.
+//meld: joining two heaps to form a valid new heap containing all the elements of both, destroying the original heaps.
+
+//Internal
+//increase - key or decrease - key: updating a key within a max - or min - heap, respectively
+
 public class Heap<T> where T : System.IComparable<T>, new() {
     private readonly HeapType _heapType;
     private T[] heapArray = new T[20];
@@ -90,31 +100,23 @@ public class Heap<T> where T : System.IComparable<T>, new() {
         index / 2;
     private bool leftChildGreater(int index) {
         if(this._heapType == HeapType.Minimum)
-            return (getLeft(index) < count) ? heapArray[index].CompareTo(heapArray[getLeft(index)]) > 0: false;
+            return (getLeft(index) < count) && heapArray[index].CompareTo(heapArray[getLeft(index)]) > 0;
         else
-            return (getLeft(index) < count) ? heapArray[index].CompareTo(heapArray[getLeft(index)]) < 0: false;
+            return (getLeft(index) < count) && heapArray[index].CompareTo(heapArray[getLeft(index)]) < 0;
     }
     private bool rightChildGreater(int currentNode) {
         if(this._heapType == HeapType.Minimum) 
-            return (getRight(currentNode) < count) ? heapArray[currentNode].CompareTo(heapArray[getRight(currentNode)]) > 0: false;
+            return (getRight(currentNode) < count) && heapArray[currentNode].CompareTo(heapArray[getRight(currentNode)]) > 0;
         else
-            return (getRight(currentNode) < count) ? heapArray[currentNode].CompareTo(heapArray[getRight(currentNode)]) < 0: false;
+            return (getRight(currentNode) < count) && heapArray[currentNode].CompareTo(heapArray[getRight(currentNode)]) < 0;
         }
     private bool rightSiblingGreater(int index) {
         if (this._heapType == HeapType.Minimum)
-            return (getRight(index) < count) ? heapArray[getLeft(index)].CompareTo(heapArray[getRight(index)]) > 0:false ;
+            return (getRight(index) < count) && heapArray[getLeft(index)].CompareTo(heapArray[getRight(index)]) > 0 ;
         else
-            return (getRight(index) < count) ? heapArray[getLeft(index)].CompareTo(heapArray[getRight(index)]) < 0:false;
+            return (getRight(index) < count) && heapArray[getLeft(index)].CompareTo(heapArray[getRight(index)]) < 0;
 
     }
-
-    //Creation
-    //heapify: create a heap out of given array of elements
-    //merge(union): joining two heaps to form a valid new heap containing all the elements of both, preserving the original heaps.
-    //meld: joining two heaps to form a valid new heap containing all the elements of both, destroying the original heaps.
-
-    //Internal
-    //increase - key or decrease - key: updating a key within a max - or min - heap, respectively
 }
 
 public enum HeapType {
